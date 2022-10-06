@@ -5,9 +5,10 @@
 
 .menu div{
     width: 30px;
-    height: 2px;
+    height: 4px;
     background-color: #86c89e;
-    margin-bottom: 7px;
+    border-radius: 5px;
+    margin-bottom: 4px;
 }
 
 .sidenav {
