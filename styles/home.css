@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cell {
+    display: block;
+}
+
+.pc{
+    display: none;
+}
+
+header {
+    width: 100%;
+    background-color: #000000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    max-width: 80%;
+}
+
+header .sec {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prim {
+    width: 100%;
+}
+
+.prim img{
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.body .mid {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.mid .s1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid h1 {
+    align-self: center;
+    color: #1b522f;
+}
+
+.s1 div{
+    height: 500px;
+}
+
+.s1 div p {
+    font-size: large;
+    margin: 6px;
+}
+
+.s1 div img {
+    width: 100%;
+    max-height: 250px;
+}
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .sec {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 700px){
+    .body .mid {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .mid .s1 {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .s1 div img {
+        width: 100%;
+        max-height: 250px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cell {
+        display: none;
+    }
+    
+    .pc {
+        display: block;
+    }
+
+    .mid .s1 {
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .body .mid {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 80%;
+    }
+    
+    .s1 div img {
+        width: 100%;
+        max-height: 250px;
+    }
+}
